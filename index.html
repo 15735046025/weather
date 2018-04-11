@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>天气App</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no,initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="css/public.css">
+	<link rel="stylesheet" href="css/index.css">
+	<script src="js/rem.js"></script>
+	<link rel="icon" href="img/logo.ico" type="image/x-icon">
+</head>
+<body>
+	<!-- 当前信息 -->
+	<section id="now">
+		<!-- 当前城市 -->
+		<h1 class="now_city">
+			<span class="address_icon">&lt;</span>
+			<span class="now_city_name">太原</span>
+		</h1>
+		
+		<!-- 当前空气质量 -->
+		<div class="now_air">
+			<h1>空气</h1>
+			<h2>良</h2>
+		</div>
+
+		<!-- 当前温度 -->
+		<h2 class="now_tem">
+			<span>-3</span>°
+		</h2>
+
+		<!-- 当前天气 --> 
+		<h3 class="now_weather">
+			<span>晴</span>
+		</h3>
+
+		<!-- 当前风向以及风级 -->
+		<div class="now_wind_box">
+			<span class="now_wind">北风</span>
+			<span class="now_wind_leavel"> 3级</span>
+		</div>
+
+		<!-- 当前温馨提示 -->
+		<p class="now_notice">
+			<span>天气冷了，注意保暖~</span>
+		</p>
+
+	</section>
+
+	<!-- 未来两天的天气信息 -->
+	<section id="future">
+		<div class="future_box today">
+			<div class="future_top">
+				<span class="future_date">今天</span>
+				<p><span class="today_hightemp">4</span>/<span class="today_lowtemp">-10</span>°C</p>
+			</div>
+
+			<div class="future_top">
+				<span class="todat_weather">多云</span>
+				<img src="img/1.png" alt="" class="today_img">			
+			</div>
+		</div>
+		<div class="future_box tomorrow">
+			<div class="future_top">
+				<span class="future_date">明天</span>
+				<p><span class="tomorrow_hightemp">5</span>/<span class="tomorrow_lowtemp">-7</span>°C</p>
+			</div>
+
+			<div class="future_top">
+				<span class="tomorrow_weather">多云</span>
+				<img src="img/1.png" alt="" class="tomorrow_img">			
+			</div>
+		</div>
+	</section>
+
+	<!-- 未来24小时的信息 -->
+	<ul id="hours">
+		<li>
+			<h1 class="hours_time">8:00</h1>
+			<div class="hours_img">
+				<img src="img/5.png" alt="">
+			</div>
+			<h2 class="hours_temp">
+				<span>-8</span>°
+			</h2>
+		</li>
+
+		<li>
+			<h1 class="hours_time">9:00</h1>
+			<div class="hours_img">
+				<img src="img/6.png" alt="">
+			</div>
+			<h2 class="hours_temp">
+				<span>-3</span>°
+			</h2>
+		</li>
+
+		<li>
+			<h1 class="hours_time">10:00</h1>
+			<div class="hours_img">
+				<img src="img/7.png" alt="">
+			</div>
+			<h2 class="hours_temp">
+				<span>-1</span>°
+			</h2>
+		</li>
+
+		<li>
+			<h1 class="hours_time">11:00</h1>
+			<div class="hours_img">
+				<img src="img/8.png" alt="">
+			</div>
+			<h2 class="hours_temp">
+				<span>0</span>°
+			</h2>
+		</li>
+
+		<li>
+			<h1 class="hours_time">12:00</h1>
+			<div class="hours_img">
+				<img src="img/9.png" alt="">
+			</div>
+			<h2 class="hours_temp">
+				<span>1</span>°
+			</h2>
+		</li>
+
+		<li>
+			<h1 class="hours_time">13:00</h1>
+			<div class="hours_img">
+				<img src="img/10.png" alt="">
+			</div>
+			<h2 class="hours_temp">
+				<span>-2</span>°
+			</h2>
+		</li>
+		<li>
+			<h1 class="hours_time">14:00</h1>
+			<div class="hours_img">
+				<img src="img/3.png" alt="">
+			</div>
+			<h2 class="hours_temp">
+				<span>-3</span>°
+			</h2>
+		</li>
+	</ul>
+
+	<!-- 未来一周的信息 -->
+	<ul id="weeks">
+		<li>
+			<h1 class="weeks_date">02</h1>/<h1 class="weeks_date">06</h1>
+			<h1 class="weeks_weather">多云转晴</h1>
+			<div class="weeks_img">
+				<img src="img/13.png" alt="">
+			</div>
+			<h2 class="weeks_max">4</h2>
+			<h2 class="weeks_min">-14</h2>
+			<h1 class="weeks_fengxiang">西北风</h1>
+			<h1 class="weeks_fengji">
+				<span>3</span>级
+			</h1>
+		</li>
+
+		<li>
+			<h1 class="weeks_date">02</h1>/<h1 class="weeks_date">06</h1>
+			<h1 class="weeks_weather">多云转晴</h1>
+			<div class="weeks_img">
+				<img src="img/13.png" alt="">
+			</div>
+			<h2 class="weeks_max">3</h2>
+			<h2 class="weeks_min">-12</h2>
+			<h1 class="weeks_fengxiang">西北风</h1>
+			<h1 class="weeks_fengji">
+				<span>3</span>级
+			</h1>
+		</li>
+
+		<li>
+			<h1 class="weeks_date">02</h1>/<h1 class="weeks_date">07</h1>
+			<h1 class="weeks_weather">多云</h1>
+			<div class="weeks_img">
+				<img src="img/5.png" alt="">
+			</div>
+			<h2 class="weeks_max">4</h2>
+			<h2 class="weeks_min">-14</h2>
+			<h1 class="weeks_fengxiang">西北风</h1>
+			<h1 class="weeks_fengji">
+				<span>3</span>级
+			</h1>
+		</li>
+
+		<li>
+			<h1 class="weeks_date">02</h1>/<h1 class="weeks_date">08</h1>
+			<h1 class="weeks_weather">多云转晴</h1>
+			<div class="weeks_img">
+				<img src="img/5.png" alt="">
+			</div>
+			<h2 class="weeks_max">5</h2>
+			<h2 class="weeks_min">-7</h2>
+			<h1 class="weeks_fengxiang">西北风</h1>
+			<h1 class="weeks_fengji">
+				<span>3</span>级
+			</h1>
+		</li>
+
+		<li>
+			<h1 class="weeks_date">02</h1>/<h1 class="weeks_date">09</h1>
+			<h1 class="weeks_weather">多云转晴</h1>
+			<div class="weeks_img">
+				<img src="img/13.png" alt="">
+			</div>
+			<h2 class="weeks_max">4</h2>
+			<h2 class="weeks_min">-14</h2>
+			<h1 class="weeks_fengxiang">西北风</h1>
+			<h1 class="weeks_fengji">
+				<span>3</span>级
+			</h1>
+		</li>
+
+		<li>
+			<h1 class="weeks_date">02</h1>/<h1 class="weeks_date">10</h1>
+			<h1 class="weeks_weather">多云转晴</h1>
+			<div class="weeks_img">
+				<img src="img/15.png" alt="">
+			</div>
+			<h2 class="weeks_max">4</h2>
+			<h2 class="weeks_min">-10</h2>
+			<h1 class="weeks_fengxiang">西北风</h1>
+			<h1 class="weeks_fengji">
+				<span>3</span>级
+			</h1>
+		</li>
+
+		<li>
+			<h1 class="weeks_date">02</h1>/<h1 class="weeks_date">11</h1>
+			<h1 class="weeks_weather">多云转晴</h1>
+			<div class="weeks_img">
+				<img src="img/17.png" alt="">
+			</div>
+			<h2 class="weeks_max">4</h2>
+			<h2 class="weeks_min">-14</h2>
+			<h1 class="weeks_fengxiang">西北风</h1>
+			<h1 class="weeks_fengji">
+				<span>3</span>级
+			</h1>
+		</li>
+	</ul>
+
+	<main id="citys">
+		<!--<header>-->
+			<!--<input type="text" class="search" placeholder="请输入搜索内容">-->
+			<!--<h2 class="btn">取消</h2>-->
+		<!--</header>-->
+
+		<!-- 热门城市 -->
+		<div class="remen_city">
+			<div class="remen_city_top">
+				<h1 class="renmen_wenzi"></h1>
+			</div>
+			<div class="remen_city_bottom">
+				<div class="city_name"></div>
+				<!--<div class="city_name">北京</div>-->
+				<!--<div class="city_name">上海</div>-->
+				<!--<div class="city_name">四川</div>-->
+				<!--<div class="city_name">杭州</div>-->
+				<!--<div class="city_name">西安</div>-->
+			</div>
+		</div>
+
+		<!-- 贵州 -->
+		<div class="remen_city">
+			<div class="remen_city_top">
+				<h1 class="renmen_wenzi"></h1>
+			</div>
+			<div class="remen_city_bottom">
+				<div class="city_name"></div>
+				<!--<div class="city_name">安顺</div>-->
+				<!--<div class="city_name">福泉</div>-->
+				<!--<div class="city_name">清镇</div>-->
+				<!--<div class="city_name">铜仁</div>-->
+				<!--<div class="city_name">贵阳</div>-->
+				<!--<div class="city_name">凯里</div>-->
+				<!--<div class="city_name">遵义</div>-->
+				<!--<div class="city_name">都匀</div>-->
+				<!--<div class="city_name">兴义</div>-->
+				<!--<div class="city_name">赤水</div>-->
+				<!--<div class="city_name">六盘水</div>-->
+				<!--<div class="city_name">毕节</div>-->
+			</div>
+		</div>
+		<!-- 河南 -->
+		<div class="remen_city">
+			<div class="remen_city_top">
+				<h1 class="renmen_wenzi"></h1>
+			</div>
+			<div class="remen_city_bottom">
+				<div class="city_name"></div>
+				<!--<div class="city_name">孟州</div>-->
+				<!--<div class="city_name">开封</div>-->
+				<!--<div class="city_name">卫辉</div>-->
+				<!--<div class="city_name">汝州</div>-->
+				<!--<div class="city_name">驻马店</div>-->
+				<!--<div class="city_name">林州</div>-->
+				<!--<div class="city_name">郑州</div>-->
+				<!--<div class="city_name">洛阳</div>-->
+				<!--<div class="city_name">邓州</div>-->
+				<!--<div class="city_name">许昌</div>-->
+				<!--<div class="city_name">焦作</div>-->
+				<!--<div class="city_name">巩义</div>-->
+				<!--<div class="city_name">登封</div>-->
+				<!--<div class="city_name">禹州</div>-->
+			</div>
+		</div>
+	</main>
+	<script src="js/jquery.js"></script>
+	<script>
+        $.getScript("https://int.dpool.sina.com.cn/iplookup/iplookup.php?format=js",function(){
+            var data=remote_ip_info;
+            var city=data.city;
+            $(".now_city_name").html(city);
+            getWeather(city);
+		});
+		function getWeather(city){
+        $.ajax({
+            url:"https://api.jisuapi.com/weather/query?appkey=a7d696503bb9e1db&city="+city,
+            dataType:"jsonp",
+            success:function(r){
+                let data=r.result.daily;
+                let str="";
+                $.each(data,function(index,val){
+                    str+=`<li>
+<h1 class="weeks_date">${val.date}</h1>
+			<h1 class="weeks_weather">${val.day.weather}/${val.night.weather}</h1>
+			<div class="weeks_img">
+				<img src="weathercn02/${val.day.img}.png" alt="">
+				<img src="weathercn/${val.night.img}.png" alt="">
+			</div>
+			<h2 class="weeks_max">${val.day.temphigh}℃</h2>
+			<h2 class="weeks_min">${val.night.templow}℃</h2>
+			<h1 class="weeks_fengxiang">${val.day.winddirect}</h1>
+			<h1 class="weeks_fengji">
+				<span>${val.day.windpower}</span>
+			</h1>
+</li>`;
+                });
+//                let str1="";
+//                $.each(data,function(index,val){
+//					str1+=`
+//		<h1 class="now_city">
+//			<span class="address_icon">&lt;</span>
+//			<span class="now_city_name"></span>
+//		</h1>
+//		<div class="now_air">
+//			<h2>${val.day.quality}</h2>
+//		</div>
+//		<h2 class="now_tem">
+//			<span>${val.day.temp}</span>°
+//		</h2>
+//		<h3 class="now_weather">
+//			<span>${val.day.weather}</span>
+//		</h3>
+//		<div class="now_wind_box">
+//			<span class="now_wind">${val.day.winddirect}</span>
+//			<span class="now_wind_leavel">${val.day.windpower}</span>
+//		</div>
+//		<p class="now_notice">
+//			<span>天气冷了，注意保暖~</span>
+//		</p>`;
+//                });
+//                $("#now").html(str1);
+                $("#weeks").html(str);
+            }
+        })
+	}
+	$(".now_city_name").click(function(){
+	    $("#citys").show();
+	    var data=[]; //存放所有的数据
+	    var province=[]; //存放所有省的数据
+	    var city=[];    //存放某个省的所有市
+	    $.ajax({
+	        url:"https://api.jisuapi.com/weather/city?appkey=a7d696503bb9e1db",
+			dataType:"jsonp",
+			success:function(r){
+				data=r.result;
+				province=$.grep(data,function(val,index){
+				    if(val.parentid==="0"){
+				        return true;
+					}
+				});
+				let str="";
+				$.each(province,function(index,val){
+				    str+=`<div class="remen_city_top">
+ 			<h1 class="renmen_wenzi" id="${val.cityid}">${val.city}</h1>
+</div>`;
+				});
+				$("#citys").html(str);
+			}
+		});
+		$("#citys").on("click",".renmen_wenzi",function(){
+		    var id=$(this).attr("id");
+		    city=$.grep(data,function(val,index){
+		        if(val.parentid===id){
+		            return true;
+				}
+			});
+			//$("#citys").empty();
+			let str="";
+			$.each(city,function(index,val){
+			    str+=`<div class="city_name">${val.city}</div>`;
+			});
+			$("#citys").html(str);
+		});
+		$("#citys").on("click",".city_name",function(){
+		    $("#citys").hide();
+		    getWeather($(this).html());
+		    let city1=$(this).html();
+            $(".now_city_name").html(city1);
+		})
+	})
+	</script>
+</body>
+</html>
